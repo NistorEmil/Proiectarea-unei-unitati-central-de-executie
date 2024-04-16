@@ -1,0 +1,273 @@
+
+*** Running vivado
+    with args -log Unit_Control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Unit_Control.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Unit_Control.tcl -notrace
+Command: synth_design -top Unit_Control -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18496 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 468.953 ; gain = 172.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Unit_Control' [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:43]
+WARNING: [Synth 8-614] signal 'length' is read in the process but is not in the sensitivity list [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:49]
+WARNING: [Synth 8-614] signal 'instruction_length' is read in the process but is not in the sensitivity list [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Unit_Control' (1#1) [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:43]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 533.160 ; gain = 236.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 533.160 ; gain = 236.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 533.160 ; gain = 236.848
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'regWrite_reg' [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'op2_isMemory_reg' [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'instruction_length_reg' [C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sources_1/new/Unit_Control.vhd:52]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 533.160 ; gain = 236.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Unit_Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[31]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[30]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[29]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[28]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[27]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[26]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[25]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[24]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[23]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[22]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[21]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[20]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[19]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[18]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[17]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[16]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[15]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[14]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[13]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[12]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[11]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[10]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[9]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[8]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[7]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[6]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[5]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[4]) is unused and will be removed from module Unit_Control.
+WARNING: [Synth 8-3332] Sequential element (instruction_length_reg[3]) is unused and will be removed from module Unit_Control.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 674.406 ; gain = 378.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     5|
+|2     |LUT1   |     2|
+|3     |LUT2   |    33|
+|4     |LUT3   |     3|
+|5     |LUT4   |     2|
+|6     |LUT5   |    19|
+|7     |LUT6   |     8|
+|8     |MUXF7  |     8|
+|9     |LD     |     6|
+|10    |IBUF   |    80|
+|11    |OBUF   |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   169|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 678.141 ; gain = 381.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 789.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 789.066 ; gain = 492.754
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 789.066 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.runs/synth_1/Unit_Control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Unit_Control_utilization_synth.rpt -pb Unit_Control_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 14 19:07:38 2023...

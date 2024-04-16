@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+58 true C:/Users/Emil_N/Proiect_SSC/Proiect_SSC.srcs/sim_1/new/ALU_Simulation.vhd
